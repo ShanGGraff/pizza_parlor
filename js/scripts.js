@@ -14,12 +14,16 @@ Order.prototype.addPizza = function(pizza) {
   this.pizzas[pizza.id] = pizza;
 };
 
+
+
 function Pizza(size, ingredients) {
   this.size = size;
   this.ingredients = ingredients;
 }
 
 //UserInterface Logic
+let order = new Order();
+
 $(document).ready(function() {
   $("form#language").submit(function(event) {
     event.preventDefault();

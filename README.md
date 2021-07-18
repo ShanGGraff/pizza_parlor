@@ -30,10 +30,14 @@ Create a prototype method for the cost of a pizza depending on the selections ch
 
 Describe: Order Object
 Test1: "Create an object to hold pizza objects and assign an id to each pizza object"
-Expect(let order = new Order(); order { pizzas: {}, currentID: 0 }
+Expect(let order = new Order(); order { pizzas: {}, currentID: 0 })
   
-Test2: "Add prototype method to add pizza objects to order object"
-Expect(beepBoop(2)output: ["0","Beep!", "Boop!"]);
+Test2: "Add prototype method to Order object to create a unique id for every pizza object created"
+Expect(let order1 = new Order(); order { pizzas: {}, currentID: 1 })
+Expect(let order2 = new Order(); order { pizzas: {}, currentID: 2 }
+
+Test3: "Add prototype method to add pizza objects to order object"
+Expect(let pizza = new Pizza("large", ["pepperoni", "cheese"]);  pizza {size: 'large', ingredients: [ 'pepporini', 'cheese']}
 
 ## Known Bugs
 
