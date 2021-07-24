@@ -5,19 +5,22 @@ function Pizza(size, ingredients) {
   this.ingredients = ingredients;
 }
 
-function Costs() {
-  small: ;
+Pizza.prototype.addPrice = function(pizza) {
+  this.pizza = pizza;
+  console.log(pizza);
+};
 
-}
 
 //UserInterface Logic
-let order = new Order();
+
 
 $(document).ready(function() {
-  $("form#language").submit(function(event) {
+  $("form#pizzaOrder").submit(function(event) {
     event.preventDefault();
+    $("#pizzaSize").hide();
+    const pizzaSize = $("#pizzaSize").val();
+    console.log(pizzaSize);
 
-
-    
+    $("#pizzaSize").show();
   });
 });
