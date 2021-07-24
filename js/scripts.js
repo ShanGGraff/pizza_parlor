@@ -14,11 +14,22 @@ Order.prototype.addPizza = function(pizza) {
   this.pizzas[pizza.id] = pizza;
 };
 
+Order.prototype.findPizza = function(id) {
+  if (this.pizzas[id] != undefined) {
+    return this.pizzas[id];
+  }
+  return false;
+};
 
 
 function Pizza(size, ingredients) {
   this.size = size;
   this.ingredients = ingredients;
+}
+
+function Costs() {
+  small: ;
+
 }
 
 //UserInterface Logic

@@ -16,7 +16,7 @@
 * Looping
 
 ## Description
-Web page takes the 
+A web page where a customer can order a pizza by size and toppings. Upon submitting the order, the page should return the cost of the pizza based on size and number of toppings chosen.
 
 ## Setup/Installation Requirements
 
