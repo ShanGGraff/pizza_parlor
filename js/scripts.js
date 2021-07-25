@@ -75,6 +75,9 @@ function finalCostOfPizza(size, ingredients) {
 $(document).ready(function() {
   $("form#pizzaOrder").submit(function(event) {
     event.preventDefault();
+    $('#cost').hide();
+    $('#cost').empty();
+    
     const pizzaSize = $("#pizzaSize").val();
     const cheese = $("#cheese").val();
     const pepperoni= $("#pepperoni").val();
@@ -87,5 +90,6 @@ $(document).ready(function() {
     pizzaOrder.addIngredients(finalIngredientArray);
     pizzaOrder.addSize(pizzaSize);
 
+    $('#cost').append("<p>" + "$" + priceOfPizza + "</p>").show();
   });
 });
