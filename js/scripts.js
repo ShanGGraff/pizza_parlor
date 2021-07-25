@@ -8,7 +8,6 @@ function Pizza(size, ingredients) {
 
 Pizza.prototype.addPrice = function(price) {
   this.price = price;
-  console.log(price);
 };
 
 
@@ -18,16 +17,16 @@ Pizza.prototype.addPrice = function(price) {
 $(document).ready(function() {
   $("form#pizzaOrder").submit(function(event) {
     event.preventDefault();
-
-
-    $("#pizzaSize").hide();
     const pizzaSize = $("#pizzaSize").val();
     console.log(pizzaSize);
+    const cheese = $("#cheese").val();
+    console.log(cheese);
+    const pepperoni= $("#pepperoni").val();
+    console.log(pepperoni);
+    const anchovies = $("#anchovies").val();
+    console.log(anchovies);
+    const olives = $("#olives").val();
+    console.log(olives);
 
-
-
-
-
-    $("#pizzaSize").show();
   });
 });
