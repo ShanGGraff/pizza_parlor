@@ -21,6 +21,10 @@ $(document).ready(function() {
     const pizzaSize = $("#pizzaSize").val();
     console.log(pizzaSize);
 
+    
+
+
+
     $("#pizzaSize").show();
   });
 });

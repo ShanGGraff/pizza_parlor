@@ -30,33 +30,50 @@
         </ul>
       </div>
     </div>
-  
     
     <div class="col-9">
       <form id="pizzaOrder">
         <label for="pizzaSize" class="control-label">Please select the size of your pizza</label>
-          <select class="form-control" id="pizzaSize">
-            <option>Small</option>
-            <option>Large</option>
-            <option>Extra Large</option>
-          </select>
+        <select class="form-control" id="pizza">
+          <option>Small</option>
+          <option>Large</option>
+          <option>Extra Large</option>
+        </select>
+        
+        <label for="cheese" class="control-label">Would you like cheese?</label>
+        <select class="form-control" id="cheese">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
       
-        <br>
-          <input type="checkbox" id="cheese" name="cheese" value="Cheese">
-          <label for="cheese">Cheese</label><br>
-          <input type="checkbox" id="pepperoni" name="pepperoni" value="Pepperoni">
-          <label for="pepperoni">Pepperoni</label><br>
-          <input type="checkbox" id="artichoke" name="artichoke" value="Artichoke">
-          <label for="artichoke">Artichoke</label><br>
-          <input type="checkbox" id="anchovy" name="anchovy" value="Anchovy">
-          <label for="anchovy">Anchovy</label><br>
+        <label for="cheese" class="control-label">Would you like to add cheese for $2.00?</label>
+        <select class="form-control" id="cheese">
+          <option>Yes</option>
+          <option>No</option>
         </select>
 
+        <label for="pepperoni" class="control-label">Would you like to add pepperoni for $1.50</label>
+        <select class="form-control" id="pepperoni">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+
+        <label for="anchovies" class="control-label">Would you like to add anchovies for $2.50</label>
+        <select class="form-control" id="anchovies">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+
+        <label for="olives" class="control-label">Would you like to add olives for $1.50</label>
+        <select class="form-control" id="olives">
+          <option>Yes</option>
+          <option>No</option>
+        </select>
    
       <button type="submit" class="btn btn-outline-dark">Press to confirm your order</button>
     </form>
   
-      <div id="pizzaSize">
+      <div id="pizzaOrder and cost">
         <p>Here's your order:</p>
       </div>  
     </div>
