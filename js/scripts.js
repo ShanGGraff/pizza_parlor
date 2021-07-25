@@ -1,14 +1,25 @@
 //Business Logic
 
-function Pizza(size, ingredients) {
-  this.size = size;
-  this.ingredients = ingredients;
+function Pizza() {
+  this.size = "";
+  this.ingredients = [];
   this.price = 0;
 }
+
+Pizza.prototype.addSize = function(size) {
+  this.size = size;
+};
+
+Pizza.prototype.addIngredients = function(ingredients) {
+  this.ingredients = ingredients;
+};
 
 Pizza.prototype.addPrice = function(price) {
   this.price = price;
 };
+
+
+
 
 
 //UserInterface Logic
