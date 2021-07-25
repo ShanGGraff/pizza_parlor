@@ -41,6 +41,37 @@ function createIngredientsArray(cheese, pepperoni, anchovies, olives) {
 
 }
 
+function finalCostOfPizza(size, ingredients) {
+  let finalCost = 0;
+    if (size === "Small") {
+      finalCost += 12.00;
+    } else if (size === "Large") {
+      finalCost += 15.00;
+    } else {
+      finalCost += 20.00;
+    }
+
+    ingredients.forEach(function(ingredient) {
+      if (ingredient === "cheese")
+        finalCost += 2.00;
+      
+      if (ingredient === "pepperoni")
+        finalCost += 1.50
+
+      if (ingredient === "anchovies")
+        finalCost += 2.50;
+
+      if (ingredient === "olives")
+        finalCost += 1.50
+
+    });
+
+    return finalCost;
+
+}
+
+
+
 //UserInterface Logic
 
 
