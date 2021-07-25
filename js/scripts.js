@@ -84,6 +84,24 @@ $(document).ready(function() {
     const anchovies = $("#anchovies").val();
     const olives = $("#olives").val();
 
+    finalIngredientArray = createIngredientsArray(cheese, pepperoni, anchovies, olives);
+    console.log(finalIngredientArray);
+
+    priceOfPizza = finalCostOfPizza(pizzaSize, finalIngredientArray);
+    console.log(priceOfPizza);
+
+    let pizzaOrder = new Pizza();
+    console.log(pizzaOrder);
+
+    pizzaOrder.addPrice(priceOfPizza);
+    console.log(pizzaOrder);
+
+    pizzaOrder.addIngredients(finalIngredientArray);
+    console.log(pizzaOrder);
+
+    pizzaOrder.addSize(pizzaSize);
+    console.log(pizzaOrder);
+
 
   });
 });
