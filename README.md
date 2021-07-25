@@ -1,6 +1,6 @@
 # Pizza Parlor
 
-#### A project to show understanding of JavaScript Objects and methods. A user should be able to order a pizza, choose toppings, choose size of pizza and the webpage should return the cost of the pizza dependent on size and toppings chosen.
+#### A project to demonstrate understanding of JavaScript Objects and methods. A user should be able to order a pizza, choose toppings, choose size of pizza and the webpage should return the cost of the pizza dependent on size and toppings chosen.
 
 #### By Shane Graff
 
