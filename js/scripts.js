@@ -1,4 +1,4 @@
-//Business Logic
+//Classes and Metho Prototypes
 
 function Pizza() {
   this.size = "";
@@ -70,10 +70,7 @@ function finalCostOfPizza(size, ingredients) {
 
 }
 
-
-
 //UserInterface Logic
-
 
 $(document).ready(function() {
   $("form#pizzaOrder").submit(function(event) {
@@ -83,25 +80,12 @@ $(document).ready(function() {
     const pepperoni= $("#pepperoni").val();
     const anchovies = $("#anchovies").val();
     const olives = $("#olives").val();
-
-    finalIngredientArray = createIngredientsArray(cheese, pepperoni, anchovies, olives);
-    console.log(finalIngredientArray);
-
-    priceOfPizza = finalCostOfPizza(pizzaSize, finalIngredientArray);
-    console.log(priceOfPizza);
-
+    const finalIngredientArray = createIngredientsArray(cheese, pepperoni, anchovies, olives);
+    const priceOfPizza = finalCostOfPizza(pizzaSize, finalIngredientArray);
     let pizzaOrder = new Pizza();
-    console.log(pizzaOrder);
-
     pizzaOrder.addPrice(priceOfPizza);
-    console.log(pizzaOrder);
-
     pizzaOrder.addIngredients(finalIngredientArray);
-    console.log(pizzaOrder);
-
     pizzaOrder.addSize(pizzaSize);
-    console.log(pizzaOrder);
-
 
   });
 });
