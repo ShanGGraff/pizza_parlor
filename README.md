@@ -24,23 +24,18 @@ A web page where a customer can order a pizza by size and toppings. Upon submitt
 * Fork website from https://github.com/ShanGGraff/pizza_parlor
 
 ## Specs
-Allow the user to choose toppings and size for the pizza they'd like to order.
-Create a pizza object constructor with properties for toppings and size.
-Create a prototype method for the cost of a pizza depending on the selections chosen. Use your own formula for this.
+User is able to choose size of pizza and ingredients from dropdown menus. A pizza object is created on submit with constructors for size and indredients. A helper function is used to create and array of ingredients from the input, and then another helper function is used to calculate the cost of the pizza in total. Next, a prototype method is used to add the cost of the pizza to the Pizza object. The cost of the pizza is diplayed on the index.html page.
 
-Describe: Order Object
-Test1: "Create an object to hold pizza objects and assign an id to each pizza object"
-Expect(let order = new Order(); order { pizzas: {}, currentID: 0 })
+Describe: Pizza Object
+Test1: "Create a Pizza object with constructors for size of pizza and ingredients"
+Expect(let pizza = new Pizza(); pizza { size: empty string, ingredients: [] })
   
-Test2: "Add prototype method to Order object to create a unique id for every pizza object created"
-Expect(let order1 = new Order(); order { pizzas: {}, currentID: 1 })
-Expect(let order2 = new Order(); order { pizzas: {}, currentID: 2 }
-
-Test3: "Add prototype method to add pizza objects to order object"
-Expect(let pizza = new Pizza("large", ["pepperoni", "cheese"]);  pizza {size: 'large', ingredients: [ 'pepporini', 'cheese']}
+Test1: "Add prototype method to add pizza cost to Pizza object "
+Expect(pizza.addPrice(price)); pizza 
 
 ## Known Bugs
-
+An object is created but never used for output on the index.html page
+Need to add more tests
 
 ## License
 MIT
