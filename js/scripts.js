@@ -3,7 +3,6 @@
 function Pizza() {
   this.size = "";
   this.ingredients = [];
-  this.price = 0;
 }
 
 Pizza.prototype.addSize = function(size) {
@@ -18,9 +17,29 @@ Pizza.prototype.addPrice = function(price) {
   this.price = price;
 };
 
+//Utility Logic
+function createIngredientsArray(cheese, pepperoni, anchovies, olives) {
+  let ingredientsArray = [cheese, pepperoni, anchovies, olives];
+  let finalIngredientsArray = [];
+  
+  ingredientsArray.forEach(function(ingredient, index) {
+    if (index === 0 && ingredient === "Yes")
+      finalIngredientsArray.push("cheese");
 
+    if (index === 1 && ingredient === "Yes")
+      finalIngredientsArray.push("pepperoni");
 
+    if (index === 2 && ingredient === "Yes")
+      finalIngredientsArray.push("anchovies");
 
+    if (index === 3 && ingredient === "Yes")
+      finalIngredientsArray.push("olives");
+
+  });
+
+  return finalIngredientsArray;
+
+}
 
 //UserInterface Logic
 
@@ -29,15 +48,11 @@ $(document).ready(function() {
   $("form#pizzaOrder").submit(function(event) {
     event.preventDefault();
     const pizzaSize = $("#pizzaSize").val();
-    console.log(pizzaSize);
     const cheese = $("#cheese").val();
-    console.log(cheese);
     const pepperoni= $("#pepperoni").val();
-    console.log(pepperoni);
     const anchovies = $("#anchovies").val();
-    console.log(anchovies);
     const olives = $("#olives").val();
-    console.log(olives);
+
 
   });
 });
